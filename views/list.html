@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <title>List Webpage!</title>
+    </head>
+    <body>
+        <h1>This is the List Page</h1>
+        <p>You can see names and prices of all avaialable books at our book shop here:</p>
+        <ul>
+            <% availableBooks.forEach(function(book){ %>
+            <li><%= book.name %>: $<%= book.price%></li>
+        <% }) %>
+        </ul>
+        
+    </body>
+</html>
