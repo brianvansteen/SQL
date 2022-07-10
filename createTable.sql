@@ -10,3 +10,13 @@ CREATE TABLE users (
     -- PostgreSQL
     current_status employment_status
 );
+
+CREATE TABLE devices (
+    id INT AUTO_INCREMENT primary key NOT NULL,
+    device_type ENUM ('Doorbell', 'Thermostat', 'Smoke alarm', 'Doorlock', 'Video'),
+    device_name VARCHAR(20) NOT NULL,
+    activation ENUM ('On', 'Off'),
+    locked ENUM ('Yes', 'No'),
+    temperature TINYINT signed DEFAULT NULL
+);
+

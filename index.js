@@ -28,3 +28,4 @@ app.set("views", __dirname+ "/views");
 app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
 app.listen(port, () => console.log(`Example Website is currently listening on port ${port}!`));
+app.use(express.static(__dirname+ "/public"));

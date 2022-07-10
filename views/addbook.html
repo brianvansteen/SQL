@@ -1,20 +1,20 @@
 <!doctype html>
 <html>
     <head>
-        <title>This is the Register page of the Webpage!</title>
+        <title>This is the Book List page of the Webpage!</title>
     </head>
     <body>
-        <h2>This is the Register</strong> page:</h2>
+        <h2>This is the Book List</strong> page:</h2>
         <p>This is an <em>example</em> paragraph.</p>
 
-        <form action = "/addedd" method = "POST">
-            <input id = "first" type = "text" name = "first" value = "firstname"/>
-            <input id = "last" type = "text" name = "last" value = "lastname"/>
-            <input id = "other" type = "text" name = "other" value = "othername"/>
+        <form action = "/bookadded" method = "POST">
+            <input id = "title" type = "text" name = "title" value = "book title"/>
+            <input id = "price" type = "number" name = "price" value = "book price"/>
+            <input id = "author" type = "text" name = "author" value = "book author"/>
             <input type = "submit" value = "OK">
         </form>
         <h4><br>
         View all books!</h4>
-        <p><br><a href = "/list"></a></p>
+        <p><br><a href = "/list">List of books:</a></p>
         </body>
 </html>
